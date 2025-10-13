@@ -1,0 +1,5 @@
+{"id":1,"nome":"Breno","email":"admin@teste.com","senha":"123456","foto":"https://i.pinimg.com/736x/72/21/bf/7221bf32061ed0edec3c4e737532b0c8.jpg","role":"admin"}
+{"id":2,"nome":"User","email":"user@teste.com","senha":"123456","foto":"https://api.dicebear.com/7.x/avataaars/svg?seed=User","role":"user"}
+{"id":3,"nome":"João Silva","email":"joao@email.com","senha":"123456","foto":"https://api.dicebear.com/7.x/avataaars/svg?seed=Joao","role":"user"}
+{"id":4,"nome":"Maria Santos","email":"maria@email.com","senha":"123456","foto":"https://api.dicebear.com/7.x/avataaars/svg?seed=Maria","role":"user"}
+{"id":5,"nome":"cr7","email":"user2@teste.com","senha":"123456","foto":"https://i.pinimg.com/736x/ba/5d/f7/ba5df704a239872432c72602d1e35fb9.jpg","role":"user"}

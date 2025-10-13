@@ -1,0 +1,307 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Styles - Tema Amarelo e Preto */
+.home-container {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.começo {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  position: relative;
+}
+
+header > .começo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: block;
+}
+
+header a {
+  display: inline-block;
+  color: #5c5c5c;
+  text-decoration: none;
+  transition: .2s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-desktop {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  transition: .2s;
+}
+
+header nav ul li a:hover {
+  color: #d4b896;
+  transform: scale(1.05);
+}
+
+/* Estilos para React Router Links */
+header nav ul li a[href] {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  transition: .2s;
+}
+
+header nav ul li a[href]:hover {
+  color: #d4b896;
+  transform: scale(1.05);
+}
+
+header .logo a[href] {
+  display: block;
+  color: inherit;
+}
+
+header .logo a[href]:hover {
+  color: inherit;
+  transform: none;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .btn {
+  margin-left: 0;
+}
+
+.btn button {
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #ffd900;
+  color: #000;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn button:hover {
+  background-color: #ffed4e;
+  transform: scale(1.05);
+}
+
+/* Topo do Site */
+section.topo-do-site {
+  padding: 120px 0 80px;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  width: 100%;
+}
+
+.topo-do-site .txt {
+  flex: 1;
+  max-width: 580px;
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.topo-do-site h1 span {
+  color: #ffd900;
+}
+
+.topo-do-site .txt p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 28px 0 40px;
+  font-weight: 300;
+  max-width: 500px;
+}
+
+.topo-do-site .btn {
+  margin-top: 40px;
+}
+
+.topo-do-site .btn button {
+  background-color: #ffd900;
+  color: #000;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.topo-do-site .btn button:hover {
+  background-color: #ffed4e;
+  transform: scale(1.05);
+}
+
+.img-topo-site {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topo-do-site .img-topo-site img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  object-fit: cover;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .topo-do-site .flex {
+    gap: 60px;
+  }
+  
+  .topo-do-site h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 4%;
+  }
+  
+  header nav ul {
+    gap: 30px;
+  }
+  
+  .btn button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .topo-do-site .flex {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .topo-do-site h1 {
+    font-size: 32px;
+  }
+  
+  .topo-do-site .txt p {
+    font-size: 16px;
+  }
+  
+  .topo-do-site .img-topo-site img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul {
+    display: none;
+  }
+  
+  .topo-do-site h1 {
+    font-size: 28px;
+  }
+  
+  .topo-do-site .img-topo-site img {
+    max-width: 300px;
+  }
+}
