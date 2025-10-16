@@ -116,7 +116,6 @@ const Cadastro = () => {
                   <option value="Data Science">Data Science</option>
                   <option value="Database">Database</option>
                   <option value="DevOps">DevOps</option>
-                  <option value="Mobile">Mobile</option>
                 </select>
               </div>
 
@@ -158,12 +157,13 @@ const Cadastro = () => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label>Instrutor</label>
+                  <label>Instrutor *</label>
                   <input
                     type="text"
                     name="instrutor"
                     value={form.instrutor}
                     onChange={handleChange}
+                    required
                     placeholder="Nome do instrutor ou canal"
                   />
                 </div>
@@ -185,7 +185,7 @@ const Cadastro = () => {
                 <button type="button" onClick={prevStep} className="btn-prev">
                   ← Anterior
                 </button>
-                <button type="button" onClick={nextStep} className="btn-next" disabled={!form.descricao}>
+                <button type="button" onClick={nextStep} className="btn-next" disabled={!form.descricao || !form.instrutor}>
                   Próximo →
                 </button>
               </div>

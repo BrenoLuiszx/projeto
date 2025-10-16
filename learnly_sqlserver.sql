@@ -199,7 +199,10 @@ END;
 -- =============================================
 
 -- Listar todos os cursos com detalhes
-SELECT * FROM vw_CursosCompletos;
+
+SELECT * FROM Cursos;
+
+SELECT * FROM Usuarios;
 
 -- Buscar cursos por categoria
 SELECT * FROM vw_CursosCompletos WHERE categoria = 'Frontend';
@@ -215,3 +218,4 @@ FROM Cursos c
 LEFT JOIN Inscricoes i ON c.id = i.curso_id
 GROUP BY c.id, c.titulo
 ORDER BY total_inscricoes DESC;
+

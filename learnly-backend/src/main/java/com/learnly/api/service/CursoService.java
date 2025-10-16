@@ -36,7 +36,10 @@ public class CursoService {
                 .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
         
         Instrutor instrutor = instrutorRepository.findByNome(cursoDTO.getInstrutor())
-                .orElseThrow(() -> new RuntimeException("Instrutor não encontrado"));
+                .orElseGet(() -> {
+                    Instrutor novoInstrutor = new Instrutor(cursoDTO.getInstrutor(), "Instrutor");
+                    return instrutorRepository.save(novoInstrutor);
+                });
 
         Curso curso = new Curso(
             cursoDTO.getTitulo(),
@@ -59,7 +62,10 @@ public class CursoService {
                 .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
         
         Instrutor instrutor = instrutorRepository.findByNome(cursoDTO.getInstrutor())
-                .orElseThrow(() -> new RuntimeException("Instrutor não encontrado"));
+                .orElseGet(() -> {
+                    Instrutor novoInstrutor = new Instrutor(cursoDTO.getInstrutor(), "Instrutor");
+                    return instrutorRepository.save(novoInstrutor);
+                });
 
         curso.setTitulo(cursoDTO.getTitulo());
         curso.setDescricao(cursoDTO.getDescricao());
