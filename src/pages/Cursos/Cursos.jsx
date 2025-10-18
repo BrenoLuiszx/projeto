@@ -96,7 +96,7 @@ const Cursos = () => {
       <Header />
       <div className="courses-container">
         <div className="courses-hero">
-          <h1>LEARNLY PREMIUM</h1>
+          <h1>LEARNLY</h1>
           <p>
             A plataforma de cursos mais avançada do Brasil. Conteúdo exclusivo,
             instrutores renomados e tecnologia de ponta para acelerar sua

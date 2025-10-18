@@ -28,11 +28,11 @@ const Registro = () => {
 
     try {
       const { confirmarSenha, ...dadosUsuario } = form;
-      console.log('🚀 Enviando dados:', dadosUsuario);
-      console.log('📡 URL da API:', 'http://localhost:8080/api/usuarios/registrar');
+      console.log(' Enviando dados:', dadosUsuario);
+      console.log(' URL da API:', 'http://localhost:8080/api/usuarios/registrar');
       
       const response = await usuarioAPI.registrar(dadosUsuario);
-      console.log('✅ Resposta recebida:', response);
+      console.log(' Resposta recebida:', response);
       
       setMensagem('Usuário cadastrado com sucesso! Redirecionando para login...');
       setForm({ nome: '', email: '', senha: '', confirmarSenha: '', foto: '' });
@@ -42,8 +42,8 @@ const Registro = () => {
         navigate('/login');
       }, 2000);
     } catch (error) {
-      console.error('❌ Erro na requisição:', error);
-      console.error('📄 Detalhes do erro:', error.response);
+      console.error(' Erro na requisição:', error);
+      console.error(' Detalhes do erro:', error.response);
       const errorMsg = error.response?.data?.error || 'Erro ao cadastrar usuário';
       setMensagem(errorMsg);
     } finally {

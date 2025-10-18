@@ -39,7 +39,7 @@ const Admin = () => {
   const carregarUsuarios = async () => {
     try {
       const response = await api.get('/usuarios');
-      console.log('👥 Usuários carregados:', response.data);
+      console.log(' Usuários carregados:', response.data);
       setUsuarios(response.data.usuarios || []);
     } catch (error) {
       console.error('Erro ao carregar usuários:', error);
@@ -358,7 +358,7 @@ const Admin = () => {
           
           {filteredCursos.length === 0 && (
             <div className="no-courses">
-              <div className="no-courses-icon">📚</div>
+              <div className="no-courses-icon"></div>
               <h3>Nenhum curso encontrado</h3>
               <p>Tente ajustar os filtros ou criar um novo curso</p>
             </div>
@@ -380,8 +380,8 @@ const Admin = () => {
                       <img 
                         src={usuario.foto} 
                         alt={usuario.nome || usuario.email}
-                        onLoad={() => console.log('✅ Admin foto carregada:', usuario.foto)}
-                        onError={() => console.log('❌ Admin erro ao carregar foto:', usuario.foto)}
+                        onLoad={() => console.log(' Admin foto carregada:', usuario.foto)}
+                        onError={() => console.log(' Admin erro ao carregar foto:', usuario.foto)}
                       />
                     ) : (
                       <div className="avatar-placeholder">
@@ -402,7 +402,7 @@ const Admin = () => {
             
             {usuarios.length === 0 && (
               <div className="no-users">
-                <div className="no-users-icon">👥</div>
+                <div className="no-users-icon"></div>
                 <h3>Nenhum usuário cadastrado</h3>
                 <p>Os usuários aparecerão aqui quando se cadastrarem na plataforma</p>
               </div>

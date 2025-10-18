@@ -71,6 +71,6 @@ public class DataInitializer implements CommandLineRunner {
         cursoRepository.save(new Curso("Docker Essentials", "Containerizacao de aplicacoes", 
             "https://www.youtube.com/watch?v=0xxHiOSJVe8", devops, fabricio, 320));
         
-        System.out.println("✅ Dados iniciais carregados!");
+        System.out.println(" Dados iniciais carregados!");
     }
 }
