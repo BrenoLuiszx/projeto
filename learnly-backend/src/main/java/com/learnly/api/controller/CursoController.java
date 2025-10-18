@@ -1,8 +1,9 @@
     package com.learnly.api.controller;
 
     import com.learnly.api.dto.CursoDTO;
-    import com.learnly.api.service.CursoService;
-    import org.springframework.beans.factory.annotation.Autowired;
+import com.learnly.api.model.service.CursoService;
+
+import org.springframework.beans.factory.annotation.Autowired;
     import org.springframework.http.ResponseEntity;
     import org.springframework.web.bind.annotation.*;
     import java.util.List;

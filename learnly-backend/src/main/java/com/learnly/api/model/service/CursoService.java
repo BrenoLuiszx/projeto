@@ -1,12 +1,13 @@
-package com.learnly.api.service;
+package com.learnly.api.model.service;
 
 import com.learnly.api.dto.CursoDTO;
-import com.learnly.api.model.Categoria;
-import com.learnly.api.model.Curso;
-import com.learnly.api.model.Instrutor;
-import com.learnly.api.repository.CategoriaRepository;
-import com.learnly.api.repository.CursoRepository;
-import com.learnly.api.repository.InstrutorRepository;
+import com.learnly.api.model.entity.Categoria;
+import com.learnly.api.model.entity.Curso;
+import com.learnly.api.model.entity.Instrutor;
+import com.learnly.api.model.repository.CategoriaRepository;
+import com.learnly.api.model.repository.CursoRepository;
+import com.learnly.api.model.repository.InstrutorRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

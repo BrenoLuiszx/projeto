@@ -1,8 +1,9 @@
 package com.learnly.api.controller;
 
 import com.learnly.api.dto.UsuarioDTO;
-import com.learnly.api.model.Usuario;
-import com.learnly.api.service.UsuarioService;
+import com.learnly.api.model.entity.Usuario;
+import com.learnly.api.model.service.UsuarioService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

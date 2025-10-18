@@ -1,8 +1,9 @@
-package com.learnly.api.service;
+package com.learnly.api.model.service;
 
 import com.learnly.api.dto.UsuarioDTO;
-import com.learnly.api.model.Usuario;
-import com.learnly.api.repository.UsuarioRepository;
+import com.learnly.api.model.entity.Usuario;
+import com.learnly.api.model.repository.UsuarioRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

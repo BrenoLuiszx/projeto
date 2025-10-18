@@ -1,10 +1,12 @@
-package com.learnly.api.repository;
+package com.learnly.api.model.repository;
 
-import com.learnly.api.model.Curso;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+import com.learnly.api.model.entity.Curso;
+
 import java.util.List;
 
 @Repository

@@ -1,7 +1,8 @@
 package com.learnly.api.config;
 
-import com.learnly.api.model.*;
-import com.learnly.api.repository.*;
+import com.learnly.api.model.entity.*;
+import com.learnly.api.model.repository.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

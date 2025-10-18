@@ -1,8 +1,10 @@
-package com.learnly.api.repository;
+package com.learnly.api.model.repository;
 
-import com.learnly.api.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.learnly.api.model.entity.Usuario;
+
 import java.util.Optional;
 
 @Repository

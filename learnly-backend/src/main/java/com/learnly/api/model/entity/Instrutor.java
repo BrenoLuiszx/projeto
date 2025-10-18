@@ -1,4 +1,4 @@
-package com.learnly.api.model;
+package com.learnly.api.model.entity;
 
 import jakarta.persistence.*;
 
