@@ -198,11 +198,16 @@ END;
 -- CONSULTAS DE EXEMPLO
 -- =============================================
 
--- Listar todos os cursos com detalhes
 
 SELECT * FROM Cursos;
 
 SELECT * FROM Usuarios;
+
+SELECT * FROM Instrutores;
+
+SELECT * FROM Categorias;
+
+SELECT * FROM 
 
 -- Buscar cursos por categoria
 SELECT * FROM vw_CursosCompletos WHERE categoria = 'Frontend';

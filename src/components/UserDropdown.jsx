@@ -7,7 +7,7 @@ const UserDropdown = () => {
   const { usuario, logout, syncUserData, isAuthenticated } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   
-  console.log('👤 Dados do usuário:', usuario);
+
   
 
   const handleLogout = () => {
@@ -28,8 +28,7 @@ const UserDropdown = () => {
                 src={usuario.foto} 
                 alt={usuario.nome} 
                 className="avatar-img"
-                onLoad={() => console.log('✅ Foto carregada:', usuario.foto)}
-                onError={() => console.log('❌ Erro ao carregar foto:', usuario.foto)}
+
               />
             ) : (
               <div className="avatar-placeholder">
@@ -39,9 +38,9 @@ const UserDropdown = () => {
           </div>
         ) : (
           <div className="menu-icon">
-            <div className="hamburger-line"></div>
-            <div className="hamburger-line"></div>
-            <div className="hamburger-line"></div>
+            <div className="user-line"></div>
+            <div className="user-line"></div>
+            <div className="user-line"></div>
           </div>
         )}
       </div>

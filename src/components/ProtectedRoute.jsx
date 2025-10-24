@@ -20,7 +20,7 @@ const ProtectedRoute = ({ children, requireAdmin = false }) => {
         background: '#f8f9fa',
         color: '#333'
       }}>
-        <h2>🚫 Acesso Negado</h2>
+        <h2>Acesso Negado</h2>
         <p>Você não tem permissão para acessar esta página.</p>
         <p>Apenas administradores podem acessar esta área.</p>
         <button 
